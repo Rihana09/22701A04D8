@@ -1,0 +1,30 @@
+public class Game{
+    String title;
+    String zoner;
+    int playcount;
+    double rating;
+    boolean isFamilyFriendly;
+    //constructor
+    public Game(String tile,String zoner,int playcount,double rating,boolean isFamilyFriendly){
+        this.title=title;
+        this.zoner=zoner;
+        this.rating=rating;
+        this.isFamilyFriendly=isFamilyFriendly;
+    }
+    //method to display game details
+    public void displayInfo(){
+        System.out.println("Game Title:"+title);
+        System.out.println("zoner:"+zoner);
+        System.out.println("playcount:"+playcount);
+        System.out.println("rating:"+rating);
+        System.out.println("FamilyFriendly:"+(isFamilyFriendly?"yes":"No"));
+    }
+        //main method to test the game class
+        public static void main(String[] args){
+            Game game1=new Game("minecraft","Adventure",5000,9.0,true);
+            game1.displayInfo();
+            System.out.println();
+            Game game2=new Game("Grand theft auto v","horror",666,7.6,false);
+            game2.displayInfo();
+        }
+}    
